@@ -13,12 +13,12 @@ Escribir "Ingrese un número N:"
     Escribir "La suma total es: ", suma
 FinAlgoritmo
 '''
-N = int(input("Ingrese un número N: "))
-
-suma = 0
-
-while N > 0:
-    suma += N  # Equivale a: suma = suma + N
-    N -= 1     # Equivale a: N = N - 1
-
-print(f"La suma total es: {suma}")
+def sumar_primeros_numeros(n):
+    suma = 0
+    m = n
+    while n > 0:
+        suma += n
+        n -= 1
+    return suma
+print("Prueba 1 (N = 5):", sumar_primeros_numeros(5))
+print("Prueba 2 (N = 10):", sumar_primeros_numeros(10))
